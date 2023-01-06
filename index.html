@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <nav id="navigace" class="navbar navbar-expand-md navbar-light fixed-top navbar-preview bg-light px-3" style="">
+        <a href="#" class="navbar-brand"><h3 class="mb-0 text-dark">DAVPOS</h3></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav"><span class="navbar-toggler-icon "></span></button>
+        <div class="collapse navbar-collapse show justify-content-end" id="mainNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link text-dark">Domů</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#onas" class="nav-link text-dark">O nás</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cinnost" class="nav-link text-dark">Co děláme</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cenik" class="nav-link text-dark">Ceník</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link text-dark">Kontakty</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>  -->
+    <header class="header">
+        <div class="logo">
+            <p class="h2 text-light">DAVPOS</p>
+        </div>
+        <nav class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+
+            <ul id="mySidebar" class="menu">
+                <li><a id="liuvod" href="#home">Domu</a></li>
+                <li><a id="lidovednosti" href="#onas">O nás</a></li>
+                <li><a id="liprojekty" href="#cinnost">Činnost</a></li>
+                <li><a id="lizajmy" href="#cenik">Ceník</a></li>
+                <li><a id="likontakt" href="#kontakt">Kontakt</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+  
+    <section id="home" class="d-flex justify-content-center align-items-center p-3" style="background-image: url(img/pozadi.jpg); background-repeat: no-repeat; background-size: 100%; background-position: center; min-height: 800px;">
+        <div class="container">
+            <div class="row">
+                <div style="font-family: Roboto" class="col-md-6 text-white text-left text-md-left mt-xl-5 mb-5 wow fadeInLeft">
+                    <h1 class="h1-responsive font-weight-bold mt-sm-5 text-dark">DAVPOS</h1>
+                    <h4 class="text-dark mb-4">Projekční kancelář zaměřená na architekturu</h4>
+                    <div>
+                       
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Launch demo modal
+                        </button>
+                        
+                        <div itemid="myModal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Cookies</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p class="text-dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis voluptates earum, praesentium nemo voluptatibus corporis dolore obcaecati sint consequatur.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavrit</button>
+                                <button type="button" class="btn btn-primary"><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Learn more</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="onas">
+        <div class="container mt-5"><h2>O nás</h2>
+            <div class="row">
+                <div class="col-lg-8 md-10">
+                    <div id="carouselExampleCaptions" class="carousel slide mb-3">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/architektura3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block " style="backdrop-filter: blur(10px);">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/architektura2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block" style="backdrop-filter: blur(10px);">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/pozadi.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark style="backdrop-filter: blur(10px);">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+                <div class="col-lg-4 md-4">
+                    <h4 class="text-center">Lorem ipsum dolor</h4>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur <span style="font-family: 'Courier New', Courier, monospace; font-weight: bold;" data-toggle="Tooltip" title="Tooltip">adipisicing</span> adipisicing elit. Temporibus maxime veritatis cum alias ipsum facilis dolorem aut totam. Corporis blanditiis quas ipsam non, tempore iure similique in officia commodi possimus nesciunt expedita<span style="font-family: 'Courier New', Courier, monospace; font-weight: bold; " data-toggle="Tooltip" title="Tooltip"> laudantium</span>  placeat sequi voluptates nobis nemo fuga natus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum rerum temporibus! Neque autem dolore velit fugit omnis. Ab, in doloremque? Doloremque nam<span style="font-family: 'Courier New', Courier, monospace; font-weight: bold;" data-toggle="Tooltip" title="Tooltip"> reprehenderit</span> perferendis ducimus culpa perspiciatis, molestiae similique. Harum, aliquid. Molestias error molestiae dignissimos rerum quos a optio vero debitis cumque expedita nihil quam dicta sed fuga est autem, odit nulla quasi ut harum eius magnam. Quaerat, nam aperiam aliquam in nihil amet error qui neque numquam inventore quidem officia dolor alias, rem repellat voluptatem, eaque necessitatibus? Delectus, a? Libero ipsum accusamus culpa sequi cum vitae tenetur. Sit vel ducimus doloribus. Eum obcaecati vitae similique cumque consectetur molestias!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cinnost">
+        <div class="container text-center">
+            <h3>Naše činnost</h3>
+            <div class="row m-2">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/cinnosti1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-dark">Projekcni cinnost</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/cinnosti2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-dark">Architektonicke studio</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/interior.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-dark">Interierove studio</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3 p-3">
+                    <div class="card">
+                        <img src="img/cinnosti3.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h2 class="card-title text-dark">Ostatni cinnosti</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, beatae.
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="cenik">
+        <div class="container mt-5">
+            <h2>Ceník služeb</h2>
+            <table class="table table-striped-columns">
+                <thead>
+                    <tr>
+                      <th scope="col">Činnost</th>
+                      <th scope="col">Jmeno architekta</th>
+                      <th scope="col">Cena</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <td>Vypracovani dokumentace</td>
+                      <td>Otto Smith</td>
+                      <td>1000 Kč/h</td>
+                    </tr>
+                    <tr>
+                      <td>Navrh interieru</td>
+                      <td>David Black</td>
+                      <td>700 Kč/h</td>
+                    </tr>
+                    <tr>
+                        <td>Pruzkum terenu</td>
+                        <td>Samuel Simpson</td>
+                        <td>800Kč/h</td>
+                    </tr>
+                    <tr>
+                        <td>Konzultace</td>
+                        <td>Anna Wright</td>
+                        <td>500Kč/h</td>
+                    </tr>
+                  </tbody>
+              </table>
+        </div>
+    </section>
+    <section id="kontakt" class="pt-4 mt-5">
+        <div class="container text-dark">
+            <h2 class="my-3">Kontakt</h2>
+            <div class="row adresaMapa px-5 py-5">
+                <div class="col-md-6 text-center pt-5" id >
+                    <p class="h5"><i class="fa-sharp fa-solid fa-location-dot"></i> Budova Beta, Vyskočilova 1481/4, 140 00 Praha 4</p>
+                    <p class="h5"><i class="fa-regular fa-envelope"></i> architekt@davpos.cz</p>
+                    <p class="h5"><i class="fa-sharp fa-solid fa-phone"></i> +420 764 647 987</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <iframe width="400" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=Budova%20Beta,%20Vysko%C4%8Dilova%201481/4,%20140%2000%20Praha%204&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div id="formContainer" class="row bg-dark px-5 py-5 my-4">
+                <form class="text-light">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputText" class="form-label">Předmět</label>
+                      <input type="text" class="form-control" id="exampleInputText">
+                    </div>
+                    <!-- <div class="form-floating mb-3 mt-5">
+                        <label class="form-label" for="">Text</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      </div> -->
+                      <div class="mb-3">
+                        <label for="exampleInputText" class="form-label">Text</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Nejsem robot</label>
+                    </div>
+                    <button type="submit" class="btn btn-light text-dark">Odeslat</button>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark">
+        <ul class="nav text-center justify-content-center flex-column flex-sm-row">
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Ochrana osobních údajů</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Kariéra</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Prohlášení o přístupnosti</a>
+            </li>
+            <li class="nav-item">
+                <a href="#kontakty" class="nav-link text-white">Kontakt</a>
+            </li>
+        </ul>
+    </section>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
